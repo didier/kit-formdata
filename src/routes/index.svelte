@@ -8,7 +8,7 @@
   <input type="email" id="email" name="email" bind:value={email} placeholder="Email" />
 	<label for="password">your secure password</label>
   <input type="password" id="password" name="password" bind:value={password} placeholder="Password" />
-  <input type="submit" value='signin'>
+	<button type="submit">Sign in</button>
 </form>
 
 <style>
@@ -17,7 +17,7 @@
 		max-width: 65ch;
 		margin: 0 auto;
 	}
-	
+
 	label {
 		margin-bottom: 0.5em;
 	}
