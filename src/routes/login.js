@@ -1,8 +1,13 @@
 export async function post(request) {
-  // Works when using an http client and sending JSON, but fails when submitting via the browser
   const { body } = request;
 
+  /**
+   * Works as expected using `FormData` methods.
+   */
+  const email = body.get('email');
+  const password = body.get('password');
+
   return {
-    body: body,
+    body: { email, password },
   };
 }
